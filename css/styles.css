@@ -96,6 +96,7 @@ h1, h2, h3, p {
 .contact-header {
     display: flex;
     margin-left: auto;
+   
 }
 
 .contact-header .item + .item {
@@ -109,6 +110,27 @@ h1, h2, h3, p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+.link.mail::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url(../images/icons.svg/envelope.svg);
+    background-size: contain;
+   
+}
+
+.link.tel::before {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url(../images/icons.svg/smartphone.svg);
+    background-size: contain;
+   
 }
 
 .contact:hover,
@@ -181,6 +203,7 @@ h1, h2, h3, p {
     display: flex;
 }
 
+
 .list-section-item {
     width: 270px;
 }
@@ -189,6 +212,28 @@ h1, h2, h3, p {
     margin-right: 30px;
 }
 
+.list-section-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: var(--third-background-color);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.antenna::before {
+    background-image: url(../images/icons.svg/antenna.svg);
+}
+.clock::before {
+    background-image: url(../images/icons.svg/clock.svg);
+}
+.diagram::before {
+    background-image: url(../images/icons.svg/diagram.svg);
+}
+.astronaut::before {
+    background-image: url(../images/icons.svg/astronaut.svg);
+}
 .section-title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -196,6 +241,7 @@ h1, h2, h3, p {
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .text {
@@ -380,7 +426,10 @@ h1, h2, h3, p {
     margin-bottom: 30px;
 
 }
-.project-poster:hover,
+.link.poster {
+    display: block;
+}
+.link.poster:hover,
 .project-poster:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
