@@ -39,6 +39,7 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -111,31 +112,18 @@ h1, h2, h3, p {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.link.mail::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-image: url(../images/icons.svg/envelope.svg);
-    background-size: contain;
-   
-}
-
-.link.tel::before {
-    display: inline-block;
-    content: "";
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background-image: url(../images/icons.svg/smartphone.svg);
-    background-size: contain;
-   
-}
+ .header-icon {
+     margin-right: 10px;
+     fill: currentColor;
+ }
 
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
+}
+.header-icon:hover,
+.header-icon:focus {
+    fill: var(--accent-color);
 }
 
 .section {
@@ -312,6 +300,10 @@ h1, h2, h3, p {
     margin-bottom: 16px;
     
 }
+
+
+
+
 .clients-title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -362,10 +354,12 @@ h1, h2, h3, p {
 .footer-list:not(:last-child) {
     margin-bottom: 9px;
 }
+
 .social {
     padding-top: 12px;
     padding-bottom: 40px;
 }
+
 .social-text {
     
     font-weight: 700;
@@ -465,3 +459,29 @@ h1, h2, h3, p {
 .hero-btn {
     cursor: pointer;
 }
+
+/*.list.social-links {
+    display: flex;
+    justify-content: center;
+    outline: 2px solid #2196f3;
+    width: 270px;
+}
+.social-item {
+    display: block;
+   
+    width: 44px;
+    height: 44px;
+    outline: 1px solid #2196f3;
+    border-radius: 50%;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.link.social-team {
+    display: inline-block;
+}
+.social-item:hover {
+    background-color: var(--accent-color);
+}*/
