@@ -200,7 +200,7 @@ h1, h2, h3, p {
     margin-right: 30px;
 }
 
-.list-section-item::before {
+/*.list-section-item::before {
     display: block;
     content: "";
     height: 120px;
@@ -210,7 +210,6 @@ h1, h2, h3, p {
     background-repeat: no-repeat;
     border-radius: 4px;
 }
-
 .antenna::before {
     background-image: url(../images/icons.svg/antenna.svg);
 }
@@ -222,7 +221,15 @@ h1, h2, h3, p {
 }
 .astronaut::before {
     background-image: url(../images/icons.svg/astronaut.svg);
+}*/
+.section-picture {
+    height: 120px;
+    background-color: var(--third-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .section-title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -300,8 +307,6 @@ h1, h2, h3, p {
     margin-bottom: 16px;
     
 }
-
-
 
 
 .clients-title {
