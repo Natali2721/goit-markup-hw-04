@@ -342,8 +342,8 @@ h1, h2, h3, p {
     border: 1px solid var(--accent-color);
 }
 
-.client-logo:hover .client-icon,
-.client-logo:focus .client-icon {
+.link.client:hover .client-icon,
+.link.client:focus .client-icon {
     fill: var(--accent-color);
 }
 
