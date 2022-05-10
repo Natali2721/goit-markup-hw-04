@@ -95,9 +95,15 @@ h1, h2, h3, p {
 }
 
 .contact-header {
+   display: flex;
+   margin-left: auto;
+   align-items: center;
+}
+
+.contact.link.tel,
+.contact.link.mail {
     display: flex;
-    margin-left: auto;
-   
+    align-items: center;
 }
 
 .contact-header .item + .item {
