@@ -48,6 +48,11 @@ h1, h2, h3, p {
     /* outline: 2px solid #2196f3;*/
 }
 
+.btn,
+.hero-btn {
+    cursor: pointer;
+}
+
 .header {
     border-bottom: 1px solid var(--header-border-color);
 }
@@ -143,7 +148,12 @@ h1, h2, h3, p {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-size: 1600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 1600px;
 }
 
 .hero-title {
@@ -316,9 +326,9 @@ h1, h2, h3, p {
 
 .team-contact {
     display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
+    justify-content: center;
 }
+    
 
 .team-contact-item {
     width: 44px;
@@ -416,6 +426,7 @@ h1, h2, h3, p {
 }
 .footer-section {
     display: flex;
+    align-items: baseline;
 }
 .footer-left {
     margin-right: 70px;
@@ -452,11 +463,6 @@ h1, h2, h3, p {
 .link-contact:hover,
 .link-contact:focus {
     color: var(--accent-color);
-}
-
-.footer-social {
-    padding-top: 12px;
-    padding-bottom: 40px;
 }
 
 .social-text {
@@ -551,11 +557,11 @@ h1, h2, h3, p {
     margin-bottom: 30px;
 
 }
-.link.poster {
+.project-link {
     display: block;
 }
-.link.poster:hover,
-.project-poster:focus {
+.project-link:hover,
+.project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
@@ -585,8 +591,5 @@ h1, h2, h3, p {
     border-left: 1px solid var(--poster-border-color);
     border-right: 1px solid var(--poster-border-color);
 }
-.btn,
-.hero-btn {
-    cursor: pointer;
-}
+
 
